@@ -85,6 +85,38 @@ final class MainViewController: UIViewController {
         myProfileButton.tintColor = .white
         myProfileButton.addTarget(self, action: #selector(myProfileButtonTaped),
                                   for: .touchUpInside)
+        view.addSubview(dotView)
+        view.addSubview(explorerLabel)
+        view.addSubview(myCartButton)
+        view.addSubview(favoritesButton)
+        view.addSubview(myProfileButton)
+        
+        NSLayoutConstraint.activate([
+            dotView.topAnchor.constraint(equalTo: view.topAnchor,constant: 32),
+            dotView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 68),
+            dotView.heightAnchor.constraint(equalToConstant: 8),
+            dotView.widthAnchor.constraint(equalToConstant: 8),
+            
+            explorerLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 26),
+            explorerLabel.leftAnchor.constraint(equalTo: dotView.rightAnchor, constant: 7),
+            explorerLabel.heightAnchor.constraint(equalToConstant: 19),
+            explorerLabel.widthAnchor.constraint(equalToConstant: 63),
+            
+            myCartButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 27),
+            myCartButton.leftAnchor.constraint(equalTo: explorerLabel.rightAnchor, constant: 47),
+            myCartButton.heightAnchor.constraint(equalToConstant: 18),
+            myCartButton.widthAnchor.constraint(equalToConstant: 17),
+            
+            favoritesButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 28),
+            favoritesButton.leftAnchor.constraint(equalTo: myCartButton.rightAnchor, constant: 52),
+            favoritesButton.heightAnchor.constraint(equalToConstant: 17),
+            favoritesButton.widthAnchor.constraint(equalToConstant: 19),
+            
+            myProfileButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 27),
+            myProfileButton.leftAnchor.constraint(equalTo: favoritesButton.rightAnchor, constant: 52),
+            myProfileButton.heightAnchor.constraint(equalToConstant: 17),
+            myProfileButton.widthAnchor.constraint(equalToConstant: 17),
+        ])
         return view
     }()
     
