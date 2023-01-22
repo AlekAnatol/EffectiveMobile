@@ -33,6 +33,8 @@ final class MainViewController: UIViewController {
     
     @objc private func myCartButtonTaped() {
         print("myCartButtonTaped")
+        let nextViewController = CartViewController()
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
     @objc private func favoritesButtonTaped() {

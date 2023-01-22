@@ -135,6 +135,8 @@ extension FilterViewController {
         view.addSubview(sizeLabel)
         view.addSubview(chooseSizeButton)
         
+        view.sendSubviewToBack(brandLabel)
+        view.sendSubviewToBack(chooseBrandButton)
         view.sendSubviewToBack(priceLabel)
         view.sendSubviewToBack(choosePriceButton)
         view.sendSubviewToBack(sizeLabel)
@@ -172,7 +174,7 @@ extension FilterViewController {
             
             choosePriceButton.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 12),
             choosePriceButton.leftAnchor.constraint(equalTo: brandLabel.leftAnchor),
-            choosePriceButton.rightAnchor.constraint(equalTo: chooseBrandButton.rightAnchor),
+            choosePriceButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -31),
             choosePriceButton.heightAnchor.constraint(equalToConstant: 37),
             
             sizeLabel.topAnchor.constraint(equalTo: choosePriceButton.bottomAnchor, constant: 12),
@@ -181,7 +183,7 @@ extension FilterViewController {
             
             chooseSizeButton.topAnchor.constraint(equalTo: sizeLabel.bottomAnchor, constant: 12),
             chooseSizeButton.leftAnchor.constraint(equalTo: brandLabel.leftAnchor),
-            chooseSizeButton.rightAnchor.constraint(equalTo: chooseBrandButton.rightAnchor),
+            chooseSizeButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -31),
             chooseSizeButton.heightAnchor.constraint(equalToConstant: 37),
             
         ])

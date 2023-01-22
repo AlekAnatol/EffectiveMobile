@@ -37,7 +37,7 @@ final class DetailsViewController: UIViewController {
     }
     
     @objc private func addToCartButtonPressed() {
-        print("isFavoriteButtonPressed")
+        print("addToCartButtonPressed")
     }
     
     @objc func descriptionCategoryButtonPressed(_ sender: Any) {

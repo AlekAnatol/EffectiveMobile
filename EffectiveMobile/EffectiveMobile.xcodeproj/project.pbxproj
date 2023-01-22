@@ -22,6 +22,9 @@
 		998187AA294C776C00CA4E9D /* DetailsImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998187A9294C776C00CA4E9D /* DetailsImagesCell.swift */; };
 		998187AF294DA9BD00CA4E9D /* HotSalesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998187AE294DA9BD00CA4E9D /* HotSalesCell.swift */; };
 		998187B1294DABF700CA4E9D /* BestSellerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998187B0294DABF700CA4E9D /* BestSellerCell.swift */; };
+		99B2B2072979629A00FFC4C4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2B2062979629A00FFC4C4 /* CartViewController.swift */; };
+		99B2B2092979B99300FFC4C4 /* CartDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2B2082979B99300FFC4C4 /* CartDetailCell.swift */; };
+		99B2B20B297A917800FFC4C4 /* IncreaseDecreaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2B20A297A917800FFC4C4 /* IncreaseDecreaseView.swift */; };
 		99E0E16A29425A820059B57C /* HotSalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E0E16929425A820059B57C /* HotSalesViewController.swift */; };
 		99E0E16E29475F4D0059B57C /* BestSellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E0E16D29475F4D0059B57C /* BestSellerViewController.swift */; };
 		99E0E175294895E60059B57C /* SelectCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E0E174294895E60059B57C /* SelectCategoryCell.swift */; };
@@ -48,6 +51,9 @@
 		998187A9294C776C00CA4E9D /* DetailsImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsImagesCell.swift; sourceTree = "<group>"; };
 		998187AE294DA9BD00CA4E9D /* HotSalesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSalesCell.swift; sourceTree = "<group>"; };
 		998187B0294DABF700CA4E9D /* BestSellerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerCell.swift; sourceTree = "<group>"; };
+		99B2B2062979629A00FFC4C4 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		99B2B2082979B99300FFC4C4 /* CartDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDetailCell.swift; sourceTree = "<group>"; };
+		99B2B20A297A917800FFC4C4 /* IncreaseDecreaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreaseDecreaseView.swift; sourceTree = "<group>"; };
 		99E0E16929425A820059B57C /* HotSalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSalesViewController.swift; sourceTree = "<group>"; };
 		99E0E16D29475F4D0059B57C /* BestSellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerViewController.swift; sourceTree = "<group>"; };
 		99E0E174294895E60059B57C /* SelectCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryCell.swift; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				99E0E17A294B1BB30059B57C /* DropDownButton.swift */,
+				99B2B20A297A917800FFC4C4 /* IncreaseDecreaseView.swift */,
 			);
 			path = "Custom elements";
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 				998187AD294DA80700CA4E9D /* MainViewController */,
 				99E0E178294A25F00059B57C /* FilterViewController.swift */,
 				998187A7294B904600CA4E9D /* DetailsViewController.swift */,
+				99B2B2062979629A00FFC4C4 /* CartViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 				998187AE294DA9BD00CA4E9D /* HotSalesCell.swift */,
 				998187B0294DABF700CA4E9D /* BestSellerCell.swift */,
 				998187A9294C776C00CA4E9D /* DetailsImagesCell.swift */,
+				99B2B2082979B99300FFC4C4 /* CartDetailCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -230,14 +239,17 @@
 				997828CC293B0A9300CBB075 /* BrandColors.swift in Sources */,
 				99E0E175294895E60059B57C /* SelectCategoryCell.swift in Sources */,
 				998187AA294C776C00CA4E9D /* DetailsImagesCell.swift in Sources */,
+				99B2B20B297A917800FFC4C4 /* IncreaseDecreaseView.swift in Sources */,
 				99E0E17B294B1BB30059B57C /* DropDownButton.swift in Sources */,
 				998187A8294B904700CA4E9D /* DetailsViewController.swift in Sources */,
 				99E0E16E29475F4D0059B57C /* BestSellerViewController.swift in Sources */,
 				99E0E179294A25F00059B57C /* FilterViewController.swift in Sources */,
+				99B2B2072979629A00FFC4C4 /* CartViewController.swift in Sources */,
 				997828B1293A321E00CBB075 /* AppDelegate.swift in Sources */,
 				998187B1294DABF700CA4E9D /* BestSellerCell.swift in Sources */,
 				99E0E16A29425A820059B57C /* HotSalesViewController.swift in Sources */,
 				998187AF294DA9BD00CA4E9D /* HotSalesCell.swift in Sources */,
+				99B2B2092979B99300FFC4C4 /* CartDetailCell.swift in Sources */,
 				997828D6293B958900CBB075 /* SelectCategoryViewController.swift in Sources */,
 				997828B3293A321E00CBB075 /* SceneDelegate.swift in Sources */,
 				99E0E1772949025D0059B57C /* MainViewController.swift in Sources */,

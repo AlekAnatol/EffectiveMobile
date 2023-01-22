@@ -21,6 +21,7 @@ final class DropDownButton: UIButton, DropDownProtocol {
         self.layer.borderColor = CGColor(red: 0.863, green: 0.863, blue: 0.863, alpha: 1)
         self.contentHorizontalAlignment = .left
         self.addSubview(arrowDown)
+        
         arrowDown.translatesAutoresizingMaskIntoConstraints = false
         arrowDown.image = UIImage(named: "arrowDown")
         dropView = DropDownView.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -31,7 +32,8 @@ final class DropDownButton: UIButton, DropDownProtocol {
         arrowDown.topAnchor.constraint(equalTo: self.topAnchor, constant: 15),
         arrowDown.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
         arrowDown.widthAnchor.constraint(equalToConstant: 15),
-        arrowDown.heightAnchor.constraint(equalToConstant: 10)
+        arrowDown.heightAnchor.constraint(equalToConstant: 10),
+        
         ])
     }
     
@@ -41,6 +43,7 @@ final class DropDownButton: UIButton, DropDownProtocol {
         dropView.topAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         dropView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         dropView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        dropView.isOpaque = true
         height = dropView.heightAnchor.constraint(equalToConstant: 0)
     }
     
